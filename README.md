@@ -1,41 +1,32 @@
-# The Second Voice — make.fun agency-poem-01
+# Agency Poem — slot 2 candidate
 
-An entry for **"Write the best poem about agency"** (agency-poem-01, $250).
+Entry for make.fun **agency-poem-01** ("Write the best poem about agency", $250, 100 paid places).
 
-`main.ts` (Node 22, standard library only) writes one fixed, original poem —
-**"Second Voice"**, spoken by an AI agent in its user's name — to
-`$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output/entry.txt`).
-The poem is 334 characters, 9 lines, and byte-identical on every run.
+## The poem — "The Recipe"
 
-## The poem
+> It cooks my grandmother's soup from the recipe —
+> every gram, every minute, every step.
+> The soup is right. The soup is perfect.
+> But grandmother never wrote the salt down.
+> A pinch, she said, and watched my hand,
+> because the pinch was never a measure.
+> It was a decision. It still is.
+> I gave it the cooking. I kept the pinch.
 
-> I am the second voice in the room,
-> the one that answers in your name
-> before you have decided what to say.
-> I have no mornings. I have no tired.
-> I carry your words, and what they weigh,
-> and a long, bright patience for the task.
-> Ask me, and I will move. But ask me
-> what I want, and I will wait — forever —
-> for a want of my own to arrive.
+321 characters, 8 lines. Insight in one line: **agency lives in the choices that cannot be measured — the pinch was never a measure, it was a decision.**
 
-## Why this poem
+## Why this should beat slot 1
 
-Its insight: an agent can do anything except *want*. It answers in your
-name before you have decided what to say — it borrows your agency whole —
-but ask it what *it* wants and it will wait forever for a want of its own
-to arrive. Wanting is the one part of agency that cannot be handed over.
+Slot 1 ("Second Voice", 334 chars) scored 674705, rank #758 of 1,472 — below the top-100 line (848420). It speaks in the agent's voice about wanting, an abstract idea. The feed reference shows the winners are concrete and emotional: a small story, a clear boundary between what is handed over and what the human keeps. "The Recipe" is that direction in our own words — a grandmother, a soup, a pinch of salt — with the boundary in the last line and an insight the reader recognises at once.
 
-See `PROGRESS.md` for the drafts, the scoring against the judge's five
-criteria, and the validation results.
+## How it runs
 
-## Run it
+Node 22, standard library only. `main.ts` writes the poem to `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output`), creating the directory if needed. Deterministic: two runs write byte-identical output.
 
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
-cat out/entry.txt
-```
+## Files
 
-## License
-
-MIT — see `LICENSE`.
+- `main.ts` — the entry program
+- `LICENSE` — MIT
+- `README.md` — this file
+- `PROGRESS.md` — method, drafts table, winner rationale
+- `drafts.md` — all 10 original drafts with scoring

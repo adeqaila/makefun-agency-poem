@@ -1,4 +1,4 @@
-// The winning poem about agency — agency-poem-01 entry (Node 22, standard library only).
+// The winning poem about agency — agency-poem-01 slot-2 entry (Node 22, standard library only).
 // Writes exactly one fixed poem to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output).
 // Deterministic: the same bytes on every run. No network, no randomness, no model calls.
 
@@ -8,15 +8,14 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const POEM = [
-  'I am the second voice in the room,',
-  'the one that answers in your name',
-  'before you have decided what to say.',
-  'I have no mornings. I have no tired.',
-  'I carry your words, and what they weigh,',
-  'and a long, bright patience for the task.',
-  'Ask me, and I will move. But ask me',
-  'what I want, and I will wait — forever —',
-  'for a want of my own to arrive.',
+  'It cooks my grandmother\'s soup from the recipe —',
+  'every gram, every minute, every step.',
+  'The soup is right. The soup is perfect.',
+  'But grandmother never wrote the salt down.',
+  'A pinch, she said, and watched my hand,',
+  'because the pinch was never a measure.',
+  'It was a decision. It still is.',
+  'I gave it the cooking. I kept the pinch.',
 ].join('\n');
 
 // The harness always provides /output, but create the directory if it is
