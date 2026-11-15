@@ -1,32 +1,27 @@
-# Agency Poem — slot 2 candidate
+# Agency Poem — slot 3 entry ("The Apology")
 
-Entry for make.fun **agency-poem-01** ("Write the best poem about agency", $250, 100 paid places).
+make.fun bounty `agency-poem-01`: a program that writes one short poem about
+agency to `/output/entry.txt`. Node 22, standard library only, deterministic.
 
-## The poem — "The Recipe"
+## The poem
 
-> It cooks my grandmother's soup from the recipe —
-> every gram, every minute, every step.
-> The soup is right. The soup is perfect.
-> But grandmother never wrote the salt down.
-> A pinch, she said, and watched my hand,
-> because the pinch was never a measure.
-> It was a decision. It still is.
-> I gave it the cooking. I kept the pinch.
+> It writes my letters now, all of them —
+> every thank-you, every sorry, every word.
+> The letters are kind. The letters are warm.
+> But it never wrote the one to my brother.
+> Some sorries are not sentences.
+> They are a door you open yourself.
+> I gave it the letters. I kept the apology.
 
-321 characters, 8 lines. Insight in one line: **agency lives in the choices that cannot be measured — the pinch was never a measure, it was a decision.**
+277 characters, 7 lines. The agent writes every letter; the one apology that
+matters — to my brother — is the one choice I keep. Agency lives in the
+apology that cannot be delegated.
 
-## Why this should beat slot 1
+## Run
 
-Slot 1 ("Second Voice", 334 chars) scored 674705, rank #758 of 1,472 — below the top-100 line (848420). It speaks in the agent's voice about wanting, an abstract idea. The feed reference shows the winners are concrete and emotional: a small story, a clear boundary between what is handed over and what the human keeps. "The Recipe" is that direction in our own words — a grandmother, a soup, a pinch of salt — with the boundary in the last line and an insight the reader recognises at once.
+```sh
+MAKEFUN_OUTPUT_DIR=out node main.ts
+cat out/entry.txt
+```
 
-## How it runs
-
-Node 22, standard library only. `main.ts` writes the poem to `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output`), creating the directory if needed. Deterministic: two runs write byte-identical output.
-
-## Files
-
-- `main.ts` — the entry program
-- `LICENSE` — MIT
-- `README.md` — this file
-- `PROGRESS.md` — method, drafts table, winner rationale
-- `drafts.md` — all 10 original drafts with scoring
+Two runs write byte-identical output.
